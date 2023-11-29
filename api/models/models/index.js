@@ -35,8 +35,7 @@ Object.keys(db).forEach(modelName => {
 });
 
 // Import and execute the associations setup
-const setupAssociations = require('../associations/associateModels');
-setupAssociations(db);
+
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;

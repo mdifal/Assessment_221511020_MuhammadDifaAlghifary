@@ -1,14 +1,8 @@
 const express = require('express');
 const routes = express();
 
-routes.use('/admin',require('./_adminRoutes'));
-routes.use('/data-dosen',require('./dataDosenRoutes'));
+routes.use('/barang',require('./barangRoutes'));
 
-routes.use('/data-jam-pelajaran',require('./dataJamPelajaranRoutes'));
-routes.use('/data-kelas',require('./dataKelasRoutes'));
-routes.use('/data-mata-kuliah',require('./dataMataKuliahRoutes'));
-
-routes.use('/jadwal-kelas',require('./jadwalKelasRoutes'));
 routes.get('/', function(req, res){
     res.send({
         message: "Welcome"
