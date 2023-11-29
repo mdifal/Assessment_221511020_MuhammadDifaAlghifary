@@ -2,6 +2,8 @@ const express = require('express');
 const routes = express();
 
 routes.use('/barang',require('./barangRoutes'));
+routes.use('/kasir',require('./kasirRoutes'));
+routes.use('/tenan',require('./tenanRoutes'));
 
 routes.get('/', function(req, res){
     res.send({
